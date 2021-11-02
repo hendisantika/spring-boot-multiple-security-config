@@ -1,6 +1,7 @@
 package com.hendisantika;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,4 +15,8 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class ApplicationController {
+    @GetMapping("/user/view")
+    public String userView() {
+        return "user";
+    }
 }
