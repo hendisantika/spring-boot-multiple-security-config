@@ -19,4 +19,9 @@ public class ApplicationController {
     public String userView() {
         return "user";
     }
+
+    @GetMapping("/admin/view")
+    public String adminView() {
+        return "admin";
+    }
 }
