@@ -24,4 +24,9 @@ public class ApplicationController {
     public String adminView() {
         return "admin";
     }
+
+    @GetMapping("/user-login")
+    public String userLoginView() {
+        return "login-user";
+    }
 }
